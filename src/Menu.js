@@ -1,6 +1,6 @@
 import React from 'react';
 import { Nav, NavItem } from 'reactstrap';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default class Menu extends React.Component {
 

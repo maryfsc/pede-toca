@@ -1,38 +1,28 @@
 import React, { Component } from 'react';
-import './ArtistsCard.css';
 import Card from './Card.js';
+import Likes from './Likes.js';
 import { Button, Badge } from 'reactstrap';
 
-
-function ArtistTrack(props) {
-
+const ArtistTrack = (props) => {
 	return (
 		<li className="mb-2">{props.title}
 			<div>
 				<iframe title={props.title} src={props.url} /><br />
- 				<Button color="secondary" onClick="">
-					Like<Badge color="secondary">0</Badge>
-				</Button>
+ 				<Likes />
 			</div>
 		</li>
 		)
 }
-
-// function countLikes(props) {
-// 	let likeClick =+ 1
-// 		.then(this.setState({likes: likeClick}));
-// }
 
 export default class ArtistCard extends Component {
 
 	constructor(props) {
 		super(props);
 		this.state = {
-			tracks: []
+      tracks: []
 		}
 
 		this.getArtistTracks = this.getArtistTracks.bind(this);
-		// this.countLikes = this.countLikes.bind(this);
 	}
 
 	getArtistTracks(event) {

@@ -1,11 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class About extends Component {
-	constructor(props) {
-		super(props);
-	}
-
-	render(){
+const About = () => {
 		return (
 			<div className="container-fluid my-3">
 				<div className="row">
@@ -19,5 +14,6 @@ export default class About extends Component {
 				</div>
 			</div>
 			)
-	}
 }
+
+export default About;

@@ -1,5 +1,4 @@
 import React from 'react';
-// import logo from './logo.svg';
 import './Card.css';
 import PropTypes from 'prop-types';
 
