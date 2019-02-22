@@ -1,18 +1,7 @@
 import React, { Component } from 'react';
 import Card from './Card.js';
-import Likes from './Likes.js';
-import { Button, Badge } from 'reactstrap';
-
-const ArtistTrack = (props) => {
-	return (
-		<li className="mb-2">{props.title}
-			<div>
-				<iframe title={props.title} src={props.url} /><br />
- 				<Likes />
-			</div>
-		</li>
-		)
-}
+import ArtistTrack from './ArtistTrack.js';
+import { Button } from 'reactstrap';
 
 export default class ArtistCard extends Component {
 
@@ -25,7 +14,7 @@ export default class ArtistCard extends Component {
 		this.getArtistTracks = this.getArtistTracks.bind(this);
 	}
 
-	getArtistTracks(event) {
+	getArtistTracks() {
 		const BASE_URL = 'https://peaceful-badlands-98440.herokuapp.com';
 
 		const options = {
@@ -37,19 +26,33 @@ export default class ArtistCard extends Component {
 			.then(res => res.json())
       .then(data => this.setState({tracks: data}));
 
-	}
+  }
+  
+  renderCard() {
+    return (
+      <Card className="text-center">
+        <h4>{this.props.name}</h4>
+				<h5>{this.props.genre}</h5>
+				<Button onClick={this.getArtistTracks} className="">Ouça!</Button>
+				<ul>
+					{this.state.tracks.map((track) => ArtistTrack(track))}
+				</ul>
+		  </Card>)
+  }
+
+  renderSpinner() {
+    return (
+      <p className="text-center">loading...</p>
+    )
+  }
 	
 	render() {
-			return (
-				<Card className="text-center">
-					<h4>{this.props.name}</h4>
-					<h5>{this.props.genre}</h5>
-					<Button onClick={this.getArtistTracks} className="">Ouça!</Button>
-					<ul>
-						{this.state.tracks.map((track) => ArtistTrack(track))}
-					</ul>
-			</Card>
-		)
-
+      return (
+        <div>
+        {this.state !== [] 
+        ? this.renderCard()
+        : this.renderSpinner()}
+        </div>
+        )
 	}
 }

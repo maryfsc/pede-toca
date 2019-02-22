@@ -18,8 +18,8 @@ class Likes extends React.Component {
     return (
       <div>
         <Button color="secondary" onClick={this.handleLikes}>
-					Like<Badge color="secondary" >{this.state.likes}</Badge>
-				</Button>
+          Like<Badge color="secondary" >{this.state.likes}</Badge>
+        </Button>
       </div>
     )
   }

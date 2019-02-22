@@ -49,10 +49,6 @@ export default class App extends Component {
         });
   }
 
-  handleClick() {
-    console.log('oi');
-  }
-
   render() {
     return (
       <div>
