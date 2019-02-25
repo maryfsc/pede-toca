@@ -3,7 +3,7 @@ import Card from './Card.js';
 import ArtistTrack from './ArtistTrack.js';
 import { Button } from 'reactstrap';
 
-export default class ArtistCard extends Component {
+class ArtistCard extends Component {
 
 	constructor(props) {
 		super(props);
@@ -30,29 +30,36 @@ export default class ArtistCard extends Component {
   
   renderCard() {
     return (
-      <Card className="text-center">
+      <div>
         <h4>{this.props.name}</h4>
-				<h5>{this.props.genre}</h5>
-				<Button onClick={this.getArtistTracks} className="">Ouça!</Button>
-				<ul>
-					{this.state.tracks.map((track) => ArtistTrack(track))}
-				</ul>
-		  </Card>)
+        <h5>{this.props.genre}</h5>
+        <Button onClick={this.getArtistTracks} className="">Ouça!</Button>
+        <ul>
+          {this.state.tracks.map((track) => ArtistTrack(track))}
+        </ul>
+      </div>
+    )
   }
 
   renderSpinner() {
     return (
-      <p className="text-center">loading...</p>
+      <div>
+        <p className="text-center">loading...</p>
+      </div>
     )
   }
 	
 	render() {
       return (
         <div>
-        {this.state !== [] 
-        ? this.renderCard()
-        : this.renderSpinner()}
+          <Card className="text-center">
+          {this.state.tracks !== [] 
+            ? this.renderCard()
+            : this.renderSpinner()}
+          </Card>
         </div>
         )
 	}
 }
+
+export default ArtistCard;

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import * as React from 'react';
 import './App.css';
 import Home from './Home.js';
 import Header from './Header.js';
@@ -9,7 +9,7 @@ import About from './About.js';
 import { Route } from 'react-router-dom';
 
 
-export default class App extends Component {
+export default class App extends React.Component {
 
   constructor(props) {
     super(props);
@@ -17,8 +17,6 @@ export default class App extends Component {
     this.state = {
       artists: []
     };
-
-    this.handleClick = this.handleClick.bind(this);
   }
 
   componentDidMount() {
@@ -37,7 +35,7 @@ export default class App extends Component {
     }
 
     fetch(`${BASE_URL}/login`, options)
-      .then(res => {
+      .then(() => {
         const options = {
           method: 'get',
           credentials: 'include'
@@ -45,25 +43,21 @@ export default class App extends Component {
 
         fetch(`${BASE_URL}/artists`, options)
           .then(res => res.json())
-          .then(data => this.setState({artists: data}));
+          .then(data => {
+            this.setState({artists: data})});
         });
   }
 
   render() {
     return (
       <div>
-        <Header />
-        
-        
+        <Header />        
         <Route path='/' exact component={Home} />
-
-        <Route path='/about' component={About}/>
-        
-        <Route path='/contact' component={Contact} />
-        
+        <Route path='/about' component={About}/>        
+        <Route path='/contact' component={Contact} />        
         <Route path='/artists' render={() => 
           <div>
-          <h3 className="mb-4">Nossos artistas</h3>
+          <h3 className="mb-4">Artistas</h3>
             {this.state.artists.map(artist => 
             <ArtistCard name={artist.name} id={artist.id} genre={artist.genre} />
             )}
