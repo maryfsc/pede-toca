@@ -1,12 +1,12 @@
 import React from 'react';
 import { Row } from 'reactstrap';
 
-const Footer = () => {
+const Footer = (props) => {
   return (
-    <footer className="container-fluid">
+    <footer className="container-fluid" id="footer">
       <Row>
         <div className="col-lg-12">
-          <p className="footer-message text-white text-center">A cool site made with React & PedeToca API!</p>
+          <p className="footer-message text-white text-center">{props.content}</p>
         </div>
       </Row>
     </footer>

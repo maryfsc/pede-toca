@@ -16,16 +16,27 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "jest": {
+    "verbose": true
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^23.6.0",
+    "jest": "^23.6.0",
+    "jest-dom": "^3.1.2",
+    "react-test-renderer": "^16.8.3"
+  }
 }

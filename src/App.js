@@ -8,7 +8,6 @@ import ArtistCard from './ArtistsCard.js';
 import About from './About.js';
 import { Route } from 'react-router-dom';
 
-
 export default class App extends React.Component {
 
   constructor(props) {
@@ -63,7 +62,7 @@ export default class App extends React.Component {
             )}
           </div>
         } />
-        <Footer />
+        <Footer content="A cool site made with React & PedeToca API!"/>
       </div>
     );
   }
