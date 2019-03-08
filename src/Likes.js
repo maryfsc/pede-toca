@@ -42,6 +42,5 @@ export default Likes;
 
 Other contracts:
   - a div is always rendered, and it contains all other elements;
-  - there is a button and inside of it, a span with like counts;
-  - the like count updates +1 when the user clicks it;
-*/
+  - there is a button and inside of it, a span with like counts;?
+  */

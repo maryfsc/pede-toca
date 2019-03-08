@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Renders a button and badge with like count 1`] = `
+exports[`renders correctly 1`] = `
 <div>
   <button
     aria-label={null}

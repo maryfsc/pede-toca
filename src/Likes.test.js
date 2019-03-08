@@ -2,21 +2,20 @@ import React from 'react';
 import TestRenderer from 'react-test-renderer';
 import Likes from './Likes';
 
-test('Renders a button and badge with like count', () => {
+test('renders correctly', () => {
     const createTest = TestRenderer.create(<Likes />);
 
     let tree = createTest.toJSON();
     
     const testLikes = createTest.root;
-    
-    tree = createTest.toJSON(); // <-- atualiza o snapshot?
-    expect(testLikes.findByType("button")).toBeTruthy();  // espera encontrar um button e retorne true
-    expect(testLikes.findByType("span")).toBeTruthy();  // espera encontrar um span ('badge') e retorne true
-    
+  
+    expect(testLikes.findByProps({className: "btn btn-secondary"})).toBeDefined();  // espera encontrar um button e retorne true
+    expect(testLikes.findByProps({className: "badge badge-secondary"})).toBeDefined(); // espera encontrar todas instâncias com classname 'badge' (01 no caso) e que sejam definidas
+    expect(testLikes.findByType("button").children).toContainEqual('Like'); // ????? sei não
+
     // tree.props.onClick(); // <-- isso não deveria dar trigger no evento para teste? retorna 'is not a function' (pq é um callback, será?)
     // tree = createTest.toJSON(); // atualiza snapshot após trigger do evento
-    // expect(testLikes.children).toBe(1); // ????? sei não, viado
-
+    // testLikes.find("button").simulate('click');
     expect(tree).toMatchSnapshot();    
 });
 
@@ -30,12 +29,13 @@ Summary of React Tests:
   Don’t test things that are not the concern of your component
 */
 
-/* Dúvidas, muitas dúvidas!!
-  0) Pelo que entendi, mock vai apenas "simular" algum componente ou chamada na hora do teste, é isso?
-  1) Quando usar mock? Como decidir isso?
-  2) O quanto mock é confiável na hora de fazer os testes? Não é misleading?
-  3) Como decidir qual lib de testes usar? Como aprender a usar os métodos da lib escolhida? É confusoooo
-  4) Dá pra usar duas ou mais libs pra testar? Isso é uma boa prática?
+/* 
   5) Como testar funções callback?
-  6) Como mockar uma função? Tem um método do jest pra isso pelo que entendi, mas não entendi como funciona
+  6) Como mockar uma função? Tem um método do jest (jest.fn() ?) pra isso pelo que entendi, mas não entendi como funciona
+
+  To Do:
+    - estudar como mockar com jest;
+    - diferenças entre mock x spy;
+    - como testar o chamamento de uma função;
+    - mudar [?] a lib pra alguma que atenda as necessidades da aplicação (enzyme?);
 */
