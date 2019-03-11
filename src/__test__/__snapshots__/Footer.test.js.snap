@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders and contains disclaimer string 1`] = `
+<footer
+  className="container-fluid"
+  id="footer"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-lg-12"
+    >
+      <p
+        className="footer-message text-white text-center"
+      />
+    </div>
+  </div>
+</footer>
+`;
