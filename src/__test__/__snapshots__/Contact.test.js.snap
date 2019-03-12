@@ -1,0 +1,1369 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Contact /> matches the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Contact />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h3>
+          Entre em contato!
+        </h3>,
+        <div
+          className="form-container offset-md-3"
+        >
+          <Form
+            tag="form"
+          >
+            <FormGroup
+              tag="div"
+            >
+              <Label
+                for=""
+                tag="label"
+                widths={
+                  Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ]
+                }
+              >
+                Nome
+              </Label>
+              <Input
+                id="contact-user-name"
+                name="name"
+                placeholder=""
+                type="text"
+              />
+            </FormGroup>
+            <FormGroup
+              tag="div"
+            >
+              <Label
+                for=""
+                tag="label"
+                widths={
+                  Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ]
+                }
+              >
+                CPF
+              </Label>
+              <Input
+                id="contact-user-cpf"
+                name="cpf"
+                placeholder="123456789"
+                type="text"
+              />
+            </FormGroup>
+            <FormGroup
+              tag="div"
+            >
+              <Label
+                for=""
+                tag="label"
+                widths={
+                  Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ]
+                }
+              >
+                Email
+              </Label>
+              <Input
+                id="contact-user-email"
+                name="email"
+                placeholder="nome@email.com"
+                type="email"
+              />
+            </FormGroup>
+            <FormGroup
+              tag="div"
+            >
+              <Label
+                for="message-text"
+                tag="label"
+                widths={
+                  Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ]
+                }
+              >
+                Escreva sua mensagem!
+              </Label>
+              <Input
+                id="message-text"
+                name="text"
+                type="textarea"
+              />
+            </FormGroup>
+          </Form>
+          <Button
+            color="secondary"
+            tag="button"
+          >
+            Enviar
+          </Button>
+        </div>,
+      ],
+      "className": "form-wrapper",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Entre em contato!",
+        },
+        "ref": null,
+        "rendered": "Entre em contato!",
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Form
+              tag="form"
+            >
+              <FormGroup
+                tag="div"
+              >
+                <Label
+                  for=""
+                  tag="label"
+                  widths={
+                    Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ]
+                  }
+                >
+                  Nome
+                </Label>
+                <Input
+                  id="contact-user-name"
+                  name="name"
+                  placeholder=""
+                  type="text"
+                />
+              </FormGroup>
+              <FormGroup
+                tag="div"
+              >
+                <Label
+                  for=""
+                  tag="label"
+                  widths={
+                    Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ]
+                  }
+                >
+                  CPF
+                </Label>
+                <Input
+                  id="contact-user-cpf"
+                  name="cpf"
+                  placeholder="123456789"
+                  type="text"
+                />
+              </FormGroup>
+              <FormGroup
+                tag="div"
+              >
+                <Label
+                  for=""
+                  tag="label"
+                  widths={
+                    Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ]
+                  }
+                >
+                  Email
+                </Label>
+                <Input
+                  id="contact-user-email"
+                  name="email"
+                  placeholder="nome@email.com"
+                  type="email"
+                />
+              </FormGroup>
+              <FormGroup
+                tag="div"
+              >
+                <Label
+                  for="message-text"
+                  tag="label"
+                  widths={
+                    Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ]
+                  }
+                >
+                  Escreva sua mensagem!
+                </Label>
+                <Input
+                  id="message-text"
+                  name="text"
+                  type="textarea"
+                />
+              </FormGroup>
+            </Form>,
+            <Button
+              color="secondary"
+              tag="button"
+            >
+              Enviar
+            </Button>,
+          ],
+          "className": "form-container offset-md-3",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for=""
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Nome
+                  </Label>
+                  <Input
+                    id="contact-user-name"
+                    name="name"
+                    placeholder=""
+                    type="text"
+                  />
+                </FormGroup>,
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for=""
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    CPF
+                  </Label>
+                  <Input
+                    id="contact-user-cpf"
+                    name="cpf"
+                    placeholder="123456789"
+                    type="text"
+                  />
+                </FormGroup>,
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for=""
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Email
+                  </Label>
+                  <Input
+                    id="contact-user-email"
+                    name="email"
+                    placeholder="nome@email.com"
+                    type="email"
+                  />
+                </FormGroup>,
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="message-text"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Escreva sua mensagem!
+                  </Label>
+                  <Input
+                    id="message-text"
+                    name="text"
+                    type="textarea"
+                  />
+                </FormGroup>,
+              ],
+              "tag": "form",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    <Label
+                      for=""
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Nome
+                    </Label>,
+                    <Input
+                      id="contact-user-name"
+                      name="name"
+                      placeholder=""
+                      type="text"
+                    />,
+                  ],
+                  "tag": "div",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": "Nome",
+                      "for": "",
+                      "tag": "label",
+                      "widths": Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": "Nome",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "id": "contact-user-name",
+                      "name": "name",
+                      "placeholder": "",
+                      "type": "text",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    <Label
+                      for=""
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      CPF
+                    </Label>,
+                    <Input
+                      id="contact-user-cpf"
+                      name="cpf"
+                      placeholder="123456789"
+                      type="text"
+                    />,
+                  ],
+                  "tag": "div",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": "CPF",
+                      "for": "",
+                      "tag": "label",
+                      "widths": Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": "CPF",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "id": "contact-user-cpf",
+                      "name": "cpf",
+                      "placeholder": "123456789",
+                      "type": "text",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    <Label
+                      for=""
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Email
+                    </Label>,
+                    <Input
+                      id="contact-user-email"
+                      name="email"
+                      placeholder="nome@email.com"
+                      type="email"
+                    />,
+                  ],
+                  "tag": "div",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": "Email",
+                      "for": "",
+                      "tag": "label",
+                      "widths": Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": "Email",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "id": "contact-user-email",
+                      "name": "email",
+                      "placeholder": "nome@email.com",
+                      "type": "email",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": Array [
+                    <Label
+                      for="message-text"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Escreva sua mensagem!
+                    </Label>,
+                    <Input
+                      id="message-text"
+                      name="text"
+                      type="textarea"
+                    />,
+                  ],
+                  "tag": "div",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": "Escreva sua mensagem!",
+                      "for": "message-text",
+                      "tag": "label",
+                      "widths": Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": "Escreva sua mensagem!",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "id": "message-text",
+                      "name": "text",
+                      "type": "textarea",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Enviar",
+              "color": "secondary",
+              "tag": "button",
+            },
+            "ref": null,
+            "rendered": "Enviar",
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3>
+            Entre em contato!
+          </h3>,
+          <div
+            className="form-container offset-md-3"
+          >
+            <Form
+              tag="form"
+            >
+              <FormGroup
+                tag="div"
+              >
+                <Label
+                  for=""
+                  tag="label"
+                  widths={
+                    Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ]
+                  }
+                >
+                  Nome
+                </Label>
+                <Input
+                  id="contact-user-name"
+                  name="name"
+                  placeholder=""
+                  type="text"
+                />
+              </FormGroup>
+              <FormGroup
+                tag="div"
+              >
+                <Label
+                  for=""
+                  tag="label"
+                  widths={
+                    Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ]
+                  }
+                >
+                  CPF
+                </Label>
+                <Input
+                  id="contact-user-cpf"
+                  name="cpf"
+                  placeholder="123456789"
+                  type="text"
+                />
+              </FormGroup>
+              <FormGroup
+                tag="div"
+              >
+                <Label
+                  for=""
+                  tag="label"
+                  widths={
+                    Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ]
+                  }
+                >
+                  Email
+                </Label>
+                <Input
+                  id="contact-user-email"
+                  name="email"
+                  placeholder="nome@email.com"
+                  type="email"
+                />
+              </FormGroup>
+              <FormGroup
+                tag="div"
+              >
+                <Label
+                  for="message-text"
+                  tag="label"
+                  widths={
+                    Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ]
+                  }
+                >
+                  Escreva sua mensagem!
+                </Label>
+                <Input
+                  id="message-text"
+                  name="text"
+                  type="textarea"
+                />
+              </FormGroup>
+            </Form>
+            <Button
+              color="secondary"
+              tag="button"
+            >
+              Enviar
+            </Button>
+          </div>,
+        ],
+        "className": "form-wrapper",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Entre em contato!",
+          },
+          "ref": null,
+          "rendered": "Entre em contato!",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Form
+                tag="form"
+              >
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for=""
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Nome
+                  </Label>
+                  <Input
+                    id="contact-user-name"
+                    name="name"
+                    placeholder=""
+                    type="text"
+                  />
+                </FormGroup>
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for=""
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    CPF
+                  </Label>
+                  <Input
+                    id="contact-user-cpf"
+                    name="cpf"
+                    placeholder="123456789"
+                    type="text"
+                  />
+                </FormGroup>
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for=""
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Email
+                  </Label>
+                  <Input
+                    id="contact-user-email"
+                    name="email"
+                    placeholder="nome@email.com"
+                    type="email"
+                  />
+                </FormGroup>
+                <FormGroup
+                  tag="div"
+                >
+                  <Label
+                    for="message-text"
+                    tag="label"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                  >
+                    Escreva sua mensagem!
+                  </Label>
+                  <Input
+                    id="message-text"
+                    name="text"
+                    type="textarea"
+                  />
+                </FormGroup>
+              </Form>,
+              <Button
+                color="secondary"
+                tag="button"
+              >
+                Enviar
+              </Button>,
+            ],
+            "className": "form-container offset-md-3",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for=""
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Nome
+                    </Label>
+                    <Input
+                      id="contact-user-name"
+                      name="name"
+                      placeholder=""
+                      type="text"
+                    />
+                  </FormGroup>,
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for=""
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      CPF
+                    </Label>
+                    <Input
+                      id="contact-user-cpf"
+                      name="cpf"
+                      placeholder="123456789"
+                      type="text"
+                    />
+                  </FormGroup>,
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for=""
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Email
+                    </Label>
+                    <Input
+                      id="contact-user-email"
+                      name="email"
+                      placeholder="nome@email.com"
+                      type="email"
+                    />
+                  </FormGroup>,
+                  <FormGroup
+                    tag="div"
+                  >
+                    <Label
+                      for="message-text"
+                      tag="label"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                    >
+                      Escreva sua mensagem!
+                    </Label>
+                    <Input
+                      id="message-text"
+                      name="text"
+                      type="textarea"
+                    />
+                  </FormGroup>,
+                ],
+                "tag": "form",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": Array [
+                      <Label
+                        for=""
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Nome
+                      </Label>,
+                      <Input
+                        id="contact-user-name"
+                        name="name"
+                        placeholder=""
+                        type="text"
+                      />,
+                    ],
+                    "tag": "div",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": "Nome",
+                        "for": "",
+                        "tag": "label",
+                        "widths": Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": "Nome",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "id": "contact-user-name",
+                        "name": "name",
+                        "placeholder": "",
+                        "type": "text",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": Array [
+                      <Label
+                        for=""
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        CPF
+                      </Label>,
+                      <Input
+                        id="contact-user-cpf"
+                        name="cpf"
+                        placeholder="123456789"
+                        type="text"
+                      />,
+                    ],
+                    "tag": "div",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": "CPF",
+                        "for": "",
+                        "tag": "label",
+                        "widths": Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": "CPF",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "id": "contact-user-cpf",
+                        "name": "cpf",
+                        "placeholder": "123456789",
+                        "type": "text",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": Array [
+                      <Label
+                        for=""
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Email
+                      </Label>,
+                      <Input
+                        id="contact-user-email"
+                        name="email"
+                        placeholder="nome@email.com"
+                        type="email"
+                      />,
+                    ],
+                    "tag": "div",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": "Email",
+                        "for": "",
+                        "tag": "label",
+                        "widths": Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": "Email",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "id": "contact-user-email",
+                        "name": "email",
+                        "placeholder": "nome@email.com",
+                        "type": "email",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": Array [
+                      <Label
+                        for="message-text"
+                        tag="label"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                      >
+                        Escreva sua mensagem!
+                      </Label>,
+                      <Input
+                        id="message-text"
+                        name="text"
+                        type="textarea"
+                      />,
+                    ],
+                    "tag": "div",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": "Escreva sua mensagem!",
+                        "for": "message-text",
+                        "tag": "label",
+                        "widths": Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ],
+                      },
+                      "ref": null,
+                      "rendered": "Escreva sua mensagem!",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "id": "message-text",
+                        "name": "text",
+                        "type": "textarea",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Enviar",
+                "color": "secondary",
+                "tag": "button",
+              },
+              "ref": null,
+              "rendered": "Enviar",
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

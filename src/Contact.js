@@ -1,21 +1,25 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 
-export default class Contact extends Component {
-	constructor(props) {
-		super(props);
-	}
+ class Contact extends React.Component {
+   constructor(props) {
+     super(props);
+   }
 
-	render() {
-		return (
-			<div>
+  render() {
+    return (
+			<div className="form-wrapper">
 				<h3>Entre em contato!</h3>
 				<div className="form-container offset-md-3">
 					<Form>
 						<FormGroup>
 							<Label for="">Nome</Label>
           		<Input type="text" name="name" id="contact-user-name" placeholder="" />
+        		</FormGroup>
+            <FormGroup>
+							<Label for="">CPF</Label>
+          		<Input type="text" name="cpf" id="contact-user-cpf" placeholder="123456789" />
         		</FormGroup>
         		<FormGroup>
 							<Label for="">Email</Label>
@@ -30,5 +34,7 @@ export default class Contact extends Component {
       	</div>
      </div> 
 		)
-	}
+  }
 }
+
+export default Contact;
