@@ -16,7 +16,7 @@ class Likes extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="like-wrapper">
         <Button color="secondary" onClick={() => this._handleLikes()}> 
           Like<Badge color="secondary">{this.state.likes}</Badge>
         </Button>

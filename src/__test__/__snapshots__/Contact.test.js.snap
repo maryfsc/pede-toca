@@ -71,8 +71,9 @@ ShallowWrapper {
               >
                 CPF
               </Label>
-              <Input
+              <InputElement
                 id="contact-user-cpf"
+                mask="999.999.999-99"
                 name="cpf"
                 placeholder="123456789"
                 type="text"
@@ -203,8 +204,9 @@ ShallowWrapper {
                 >
                   CPF
                 </Label>
-                <Input
+                <InputElement
                   id="contact-user-cpf"
+                  mask="999.999.999-99"
                   name="cpf"
                   placeholder="123456789"
                   type="text"
@@ -320,8 +322,9 @@ ShallowWrapper {
                   >
                     CPF
                   </Label>
-                  <Input
+                  <InputElement
                     id="contact-user-cpf"
+                    mask="999.999.999-99"
                     name="cpf"
                     placeholder="123456789"
                     type="text"
@@ -471,8 +474,9 @@ ShallowWrapper {
                     >
                       CPF
                     </Label>,
-                    <Input
+                    <InputElement
                       id="contact-user-cpf"
+                      mask="999.999.999-99"
                       name="cpf"
                       placeholder="123456789"
                       type="text"
@@ -508,6 +512,7 @@ ShallowWrapper {
                     "nodeType": "class",
                     "props": Object {
                       "id": "contact-user-cpf",
+                      "mask": "999.999.999-99",
                       "name": "cpf",
                       "placeholder": "123456789",
                       "type": "text",
@@ -736,8 +741,9 @@ ShallowWrapper {
                 >
                   CPF
                 </Label>
-                <Input
+                <InputElement
                   id="contact-user-cpf"
+                  mask="999.999.999-99"
                   name="cpf"
                   placeholder="123456789"
                   type="text"
@@ -868,8 +874,9 @@ ShallowWrapper {
                   >
                     CPF
                   </Label>
-                  <Input
+                  <InputElement
                     id="contact-user-cpf"
+                    mask="999.999.999-99"
                     name="cpf"
                     placeholder="123456789"
                     type="text"
@@ -985,8 +992,9 @@ ShallowWrapper {
                     >
                       CPF
                     </Label>
-                    <Input
+                    <InputElement
                       id="contact-user-cpf"
+                      mask="999.999.999-99"
                       name="cpf"
                       placeholder="123456789"
                       type="text"
@@ -1136,8 +1144,9 @@ ShallowWrapper {
                       >
                         CPF
                       </Label>,
-                      <Input
+                      <InputElement
                         id="contact-user-cpf"
+                        mask="999.999.999-99"
                         name="cpf"
                         placeholder="123456789"
                         type="text"
@@ -1173,6 +1182,7 @@ ShallowWrapper {
                       "nodeType": "class",
                       "props": Object {
                         "id": "contact-user-cpf",
+                        "mask": "999.999.999-99",
                         "name": "cpf",
                         "placeholder": "123456789",
                         "type": "text",

@@ -1,22 +1,28 @@
 import React from 'react';
-import TestRenderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
+import { Button } from 'reactstrap';
 import Likes from '../Likes';
 
-test('renders correctly', () => {
-    const createTest = TestRenderer.create(<Likes />);
+describe('<Likes />', () => {
+  const wrapper = shallow(<Likes />);
 
-    let tree = createTest.toJSON();
-    
-    const testLikes = createTest.root;
+  it('renders correctly', () => {
+
+    expect(wrapper.find(<div className="likes-wrapper"></div>)).toBeDefined();
+    expect(wrapper.find(<span className="badge badge-secondary" />)).toBeDefined(); 
+    // expect(wrapper.find(<button className="btn btn-secondary" />).contains('Like')).toBeTruthy(); // ????? 
+
+    expect(wrapper).toMatchSnapshot();
+  });
   
-    expect(testLikes.findByProps({className: "btn btn-secondary"})).toBeDefined();  // espera encontrar um button e retorne true
-    expect(testLikes.findByProps({className: "badge badge-secondary"})).toBeDefined(); // espera encontrar todas instâncias com classname 'badge' (01 no caso) e que sejam definidas
-    expect(testLikes.findByType("button").children).toContainEqual('Like'); // ????? sei não
+  // it('updates count likes when the button is clicked', () => {
+  //   const button = wrapper.find(<Button />);
+  //   const badge = wrapper.findWhere(node => node.InnerText === '0');
 
-    // tree.props.onClick(); // <-- isso não deveria dar trigger no evento para teste? retorna 'is not a function' (pq é um callback, será?)
-    // tree = createTest.toJSON(); // atualiza snapshot após trigger do evento
-    // testLikes.find("button").simulate('click');
-    expect(tree).toMatchSnapshot();    
+  //   button.simulate('click'); // error: Method “simulate” is meant to be run on 1 node. 0 found instead.
+
+  //   expect(badge.contains(1)).toBeTruthy();
+  // });
 });
 
 /*
@@ -34,13 +40,15 @@ Summary of React Tests:
   6) Como mockar uma função? Tem um método do jest (jest.fn() ?) pra isso pelo que entendi, mas não entendi como funciona
 
   To Do:
-    - estudar como mockar com jest;
+    - estudar como mockar com jest (done);
+      -shallow do Enzyme é como se fosse um mock?
     
-    - diferenças entre mock x spy:
+    - diferenças entre mock x spy (done):
       -Mock é possível de ser construído 'do nada', criando uma classe inteira e métodos para teste. 
       -Spy é usado pra selecionar geralmente uma parte da classe que será testada e utiliza métodos REAIS, "espiando" o objeto real em questão; 
     
     - como testar o chamamento de uma função;
     
-    - mudar [?] a lib pra alguma que atenda as necessidades da aplicação (enzyme?);
+    - mudar [?] a lib pra alguma que atenda as necessidades da aplicação (enzyme?)(done);
+      -escolhi enzyme;
 */

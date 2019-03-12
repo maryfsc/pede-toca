@@ -40,6 +40,7 @@
     "enzyme-adapter-react-16": "^1.10.0",
     "jest": "^23.6.0",
     "jest-dom": "^3.1.2",
+    "react-input-mask": "^2.0.4",
     "react-test-renderer": "^16.8.3"
   }
 }

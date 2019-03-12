@@ -1,4 +1,5 @@
 import React from 'react';
+import InputMask from 'react-input-mask';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 
@@ -19,7 +20,7 @@ import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
         		</FormGroup>
             <FormGroup>
 							<Label for="">CPF</Label>
-          		<Input type="text" name="cpf" id="contact-user-cpf" placeholder="123456789" />
+          		<InputMask mask="999.999.999-99" type="text" name="cpf" id="contact-user-cpf" placeholder="123456789" />
         		</FormGroup>
         		<FormGroup>
 							<Label for="">Email</Label>
