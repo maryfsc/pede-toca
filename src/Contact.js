@@ -1,12 +1,24 @@
 import React from 'react';
 import InputMask from 'react-input-mask';
+import { validate as validateCPF } from "gerador-validador-cpf";
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
+  let value;
 
  class Contact extends React.Component {
    constructor(props) {
-     super(props);
-   }
+		 super(props);
+	 }
+	 
+	 _handleBlur(event) {
+    return validateCPF(event.target.value) ? '' : alert('CPF inválido!');
+	 }
+
+	//  _renderWarning() {
+	// 	 return (
+	// 		 this._handleBlur() ? '' :  <p>CPF Inválido!</p>
+	// 	 )
+	//  }
 
   render() {
     return (
@@ -18,9 +30,17 @@ import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 							<Label for="">Nome</Label>
           		<Input type="text" name="name" id="contact-user-name" placeholder="" />
         		</FormGroup>
-            <FormGroup>
+            <FormGroup className="cpf-wrapper">
 							<Label for="">CPF</Label>
-          		<InputMask mask="999.999.999-99" type="text" name="cpf" id="contact-user-cpf" placeholder="123456789" />
+							<InputMask 
+								mask="999.999.999-99" 
+								type="text" 
+								name="cpf" 
+								id="contact-user-cpf" 
+								placeholder="123456789"
+								onBlur={this._handleBlur}
+							/>
+							{value}
         		</FormGroup>
         		<FormGroup>
 							<Label for="">Email</Label>

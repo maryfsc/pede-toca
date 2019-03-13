@@ -5,6 +5,7 @@
   "dependencies": {
     "bootstrap": "^4.1.3",
     "create-react-app": "^2.0.4",
+    "gerador-validador-cpf": "^4.0.0-beta.0",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-route": "^1.0.3",
