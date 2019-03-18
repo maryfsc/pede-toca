@@ -54,6 +54,7 @@ ShallowWrapper {
               />
             </FormGroup>
             <FormGroup
+              className="cpf-wrapper"
               tag="div"
             >
               <Label
@@ -75,6 +76,7 @@ ShallowWrapper {
                 id="contact-user-cpf"
                 mask="999.999.999-99"
                 name="cpf"
+                onBlur={[Function]}
                 placeholder="123456789"
                 type="text"
               />
@@ -187,6 +189,7 @@ ShallowWrapper {
                 />
               </FormGroup>
               <FormGroup
+                className="cpf-wrapper"
                 tag="div"
               >
                 <Label
@@ -208,6 +211,7 @@ ShallowWrapper {
                   id="contact-user-cpf"
                   mask="999.999.999-99"
                   name="cpf"
+                  onBlur={[Function]}
                   placeholder="123456789"
                   type="text"
                 />
@@ -305,6 +309,7 @@ ShallowWrapper {
                   />
                 </FormGroup>,
                 <FormGroup
+                  className="cpf-wrapper"
                   tag="div"
                 >
                   <Label
@@ -326,6 +331,7 @@ ShallowWrapper {
                     id="contact-user-cpf"
                     mask="999.999.999-99"
                     name="cpf"
+                    onBlur={[Function]}
                     placeholder="123456789"
                     type="text"
                   />
@@ -478,10 +484,13 @@ ShallowWrapper {
                       id="contact-user-cpf"
                       mask="999.999.999-99"
                       name="cpf"
+                      onBlur={[Function]}
                       placeholder="123456789"
                       type="text"
                     />,
+                    undefined,
                   ],
+                  "className": "cpf-wrapper",
                   "tag": "div",
                 },
                 "ref": null,
@@ -514,6 +523,7 @@ ShallowWrapper {
                       "id": "contact-user-cpf",
                       "mask": "999.999.999-99",
                       "name": "cpf",
+                      "onBlur": [Function],
                       "placeholder": "123456789",
                       "type": "text",
                     },
@@ -521,6 +531,7 @@ ShallowWrapper {
                     "rendered": null,
                     "type": [Function],
                   },
+                  undefined,
                 ],
                 "type": [Function],
               },
@@ -724,6 +735,7 @@ ShallowWrapper {
                 />
               </FormGroup>
               <FormGroup
+                className="cpf-wrapper"
                 tag="div"
               >
                 <Label
@@ -745,6 +757,7 @@ ShallowWrapper {
                   id="contact-user-cpf"
                   mask="999.999.999-99"
                   name="cpf"
+                  onBlur={[Function]}
                   placeholder="123456789"
                   type="text"
                 />
@@ -857,6 +870,7 @@ ShallowWrapper {
                   />
                 </FormGroup>
                 <FormGroup
+                  className="cpf-wrapper"
                   tag="div"
                 >
                   <Label
@@ -878,6 +892,7 @@ ShallowWrapper {
                     id="contact-user-cpf"
                     mask="999.999.999-99"
                     name="cpf"
+                    onBlur={[Function]}
                     placeholder="123456789"
                     type="text"
                   />
@@ -975,6 +990,7 @@ ShallowWrapper {
                     />
                   </FormGroup>,
                   <FormGroup
+                    className="cpf-wrapper"
                     tag="div"
                   >
                     <Label
@@ -996,6 +1012,7 @@ ShallowWrapper {
                       id="contact-user-cpf"
                       mask="999.999.999-99"
                       name="cpf"
+                      onBlur={[Function]}
                       placeholder="123456789"
                       type="text"
                     />
@@ -1148,10 +1165,13 @@ ShallowWrapper {
                         id="contact-user-cpf"
                         mask="999.999.999-99"
                         name="cpf"
+                        onBlur={[Function]}
                         placeholder="123456789"
                         type="text"
                       />,
+                      undefined,
                     ],
+                    "className": "cpf-wrapper",
                     "tag": "div",
                   },
                   "ref": null,
@@ -1184,6 +1204,7 @@ ShallowWrapper {
                         "id": "contact-user-cpf",
                         "mask": "999.999.999-99",
                         "name": "cpf",
+                        "onBlur": [Function],
                         "placeholder": "123456789",
                         "type": "text",
                       },
@@ -1191,6 +1212,7 @@ ShallowWrapper {
                       "rendered": null,
                       "type": [Function],
                     },
+                    undefined,
                   ],
                   "type": [Function],
                 },

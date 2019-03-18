@@ -5,11 +5,14 @@ import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
   let value;
 
- class Contact extends React.Component {
+  class Contact extends React.Component {
    constructor(props) {
-		 super(props);
+     super(props);
+     
+     this._handleBlur = this._handleBlur.bind(this);
 	 }
-	 
+   // usar o estado do inputmask para renderizar mensagem de cpf inválido / válido
+   
 	 _handleBlur(event) {
     return validateCPF(event.target.value) ? '' : alert('CPF inválido!');
 	 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Button } from 'reactstrap';
 import Likes from '../Likes';
 
 describe('<Likes />', () => {
@@ -11,7 +10,9 @@ describe('<Likes />', () => {
     expect(wrapper.find(<div className="likes-wrapper"></div>)).toBeDefined();
     expect(wrapper.find(<span className="badge badge-secondary" />)).toBeDefined(); 
     // expect(wrapper.find(<button className="btn btn-secondary" />).contains('Like')).toBeTruthy(); // ????? 
+  });
 
+  it('matches the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
   

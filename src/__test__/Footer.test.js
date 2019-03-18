@@ -1,15 +1,20 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
 import Footer from '../Footer';
 
-test('Footer renders and contains disclaimer string', () => {
-  const component = renderer.create(
-    <Footer />,
-  );
+describe('<Footer />', () => {
+  const wrapper = shallow(<Footer />);
 
-  let tree = component.toJSON();
-  expect(tree).toMatchSnapshot();
+  it('renders correctly', () => {
+    expect(wrapper.find(<footer id="footer"></footer>)).toBeDefined();
+    expect(wrapper.find(<div className="footer-message"></div>)).toBeDefined();
+  });
+
+  it('matches the snapshot', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
 });
+
 
 
 // nesse caso não estou testando exatamente o texto contido no footer (children), né? só o snapshot do componente :thinking: 
