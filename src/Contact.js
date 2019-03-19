@@ -3,25 +3,21 @@ import InputMask from 'react-input-mask';
 import { validate as validateCPF } from "gerador-validador-cpf";
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
-  let value;
-
   class Contact extends React.Component {
    constructor(props) {
      super(props);
      
-     this._handleBlur = this._handleBlur.bind(this);
-	 }
+     this.state = {
+       isCPFValid: true
+    }
+   
+   this._handleBlur = this._handleBlur.bind(this);
+	}
    // usar o estado do inputmask para renderizar mensagem de cpf inválido / válido
    
 	 _handleBlur(event) {
-    return validateCPF(event.target.value) ? '' : alert('CPF inválido!');
+    return validateCPF(event.target.value) == true ? this.setState({ isCPFValid: true }) : this.setState({ isCPFValid: false });
 	 }
-
-	//  _renderWarning() {
-	// 	 return (
-	// 		 this._handleBlur() ? '' :  <p>CPF Inválido!</p>
-	// 	 )
-	//  }
 
   render() {
     return (
@@ -43,7 +39,7 @@ import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 								placeholder="123456789"
 								onBlur={this._handleBlur}
 							/>
-							{value}
+							{this.state.isCPFValid ? <p> </p> : <p>'CPF inválido!'</p>}
         		</FormGroup>
         		<FormGroup>
 							<Label for="">Email</Label>

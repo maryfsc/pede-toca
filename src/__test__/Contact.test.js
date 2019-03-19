@@ -1,24 +1,26 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import InputElement from 'react-input-mask';
 import { validate as validateCPF } from "gerador-validador-cpf";
 import Contact from '../Contact';
 
-// usar mount, wrapper dentro de cada teste mesmo que repita, 
+// usar mount, wrapper dentro de cada teste mesmo que repita 
 
 describe('<Contact />', () => {
-  const wrapper = shallow(<Contact />);
-  console.log(wrapper.debug());
-
   it('renders correctly', () => {
+    const wrapper = shallow(<Contact />);
+
     expect(wrapper).toBeDefined();
   });
 
   it('contains a form', () => {
+    const wrapper = shallow(<Contact />);
+
     expect(wrapper.find(<div className="form-container"></div>)).toBeDefined();
   });
 
   it('input "cpf" returns formatted accordingly', () => {
+    const wrapper = shallow(<Contact />); 
     const cpf = wrapper.find(<InputElement id="contact-user-cpf" />);
     cpf.value = '12345678999';
 
@@ -26,8 +28,9 @@ describe('<Contact />', () => {
   })
 
   it('calls an alert when "cpf" is invalid', () => {
+    const wrapper = mount(<Contact />);
+
     const cpf = wrapper.find(<InputElement id="contact-user-cpf" />);
-    expect(cpf.length).toEqual(1);
 
     cpf.simulate('blur', { target: { value: "999999999" } });
 
@@ -35,6 +38,7 @@ describe('<Contact />', () => {
   });
 
   it('input "email" receives a string', () => {
+    const wrapper = shallow(<Contact />);
     const input = wrapper.find(<input id="contact-user-email" />);
     input.value = 'bla@blabla.com';
 
@@ -43,6 +47,8 @@ describe('<Contact />', () => {
   });
 
   it('matches the snapshot', () => {
+    const wrapper = shallow(<Contact />);
+
     expect(wrapper).toMatchSnapshot();
   });
 });
